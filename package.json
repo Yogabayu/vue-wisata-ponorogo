@@ -2,7 +2,7 @@
   "name": "vue-material-kit-2",
   "version": "2.0.0",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"

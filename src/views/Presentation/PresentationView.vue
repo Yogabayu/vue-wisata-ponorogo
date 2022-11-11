@@ -62,11 +62,10 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Material Kit 2
+              Wisata Ponorogo
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Start the Development With Bootstrap 5 Design System inspired by
-              Material Design.
+              Jelajahi Semua Destinasi Wisata dalam satu tempat
             </p>
           </div>
         </div>
@@ -93,7 +92,7 @@ onUnmounted(() => {
             :action="{
               route:
                 'https://www.creative-tim.com/learning-lab/vue/overview/material-kit/',
-              label: { text: 'Let\'s start', color: 'white' }
+              label: { text: 'Let\'s start', color: 'white' },
             }"
           />
         </div>
@@ -108,7 +107,7 @@ onUnmounted(() => {
             :action="{
               route:
                 'https://www.creative-tim.com/learning-lab/vue/input/material-kit/',
-              label: { text: 'Read more' }
+              label: { text: 'Read more' },
             }"
           />
         </div>
@@ -122,7 +121,7 @@ onUnmounted(() => {
             :action="{
               route:
                 'https://www.creative-tim.com/learning-lab/vue/utilities/material-kit/',
-              label: { text: 'Read more' }
+              label: { text: 'Read more' },
             }"
           />
         </div>
@@ -133,13 +132,13 @@ onUnmounted(() => {
     <div
       class="container-fluid mt-sm-5 border-radius-xl"
       :style="{
-        background: 'linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))'
+        background: 'linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))',
       }"
     >
       <div
         class="page-header py-6 py-md-5 my-sm-3 mb-3 border-radius-xl"
         :style="{
-          backgroundImage: `url(${wavesWhite})`
+          backgroundImage: `url(${wavesWhite})`,
         }"
         loading="lazy"
       >
