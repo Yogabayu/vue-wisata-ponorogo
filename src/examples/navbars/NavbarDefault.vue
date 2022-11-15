@@ -120,7 +120,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Material Kit 2
+        WiRo - Wisata Ponorogo
       </RouterLink>
       <RouterLink
         class="navbar-brand d-block d-md-none"
