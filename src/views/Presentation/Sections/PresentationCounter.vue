@@ -6,26 +6,28 @@ import { useFetchStore } from "../../../api/api";
 import { storeToRefs } from "pinia";
 const store = useFetchStore();
 const total = storeToRefs(store);
-const { fetchUsers } = store;
+const { fetchKecamatan, fetchProvinsi, fetchKelurahan } = store;
 onMounted(() => {
-  fetchUsers();
+  fetchKecamatan();
+  fetchProvinsi();
+  fetchKelurahan();
 });
 </script>
 
 <template>
   <section class="pt-3 pb-4" id="count-stats">
     <div class="container">
+      <div>{{ totalKec }}</div>
       <div class="row">
         <div class="col-lg-9 z-index-2 border-radius-xl mx-auto py-3">
           <div class="row">
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Coded Elements"
-                description="From buttons, to inputs, navbars, alerts or cards, you are
-                  covered"
-                :count="total.total.value"
-                suffix="+"
+                title="Total Provinsi"
+                description="Jumlah Semua Provinsi di Indonesia"
+                :count="total.totalProv.value"
+                suffix=""
                 :duration="3000"
                 divider="vertical"
               />
@@ -33,11 +35,10 @@ onMounted(() => {
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
                 color="success"
-                title="Design Blocks"
-                description="Mix the sections, change the colors and unleash your
-                  creativity"
-                :count="15"
-                suffix="+"
+                title="Total Kecamatan"
+                description="Jumlah Semua kecamatan di Kabupaten Ponorogo"
+                :count="total.totalKec.value"
+                suffix=""
                 :duration="3000"
                 divider="vertical"
               />
@@ -45,10 +46,10 @@ onMounted(() => {
             <div class="col-md-4">
               <DefaultCounterCard
                 color="success"
-                title="Pages"
+                title="Total Kelurahan di Kecamatan Slahung"
                 description="Save 3-4 weeks of work when you use our pre-made pages for
                   your website"
-                :count="4"
+                :count="total.totalKel.value"
                 :duration="3000"
               />
             </div>

@@ -71,7 +71,7 @@ function getClasses(size, success, error) {
 </script>
 <template>
   <div class="input-group">
-    <label v-if="label" :class="label.class">{{
+    <label v-if="label" :class="label.class" style="margin-bottom: 5px">{{
       typeof label == "string" ? label : label.text
     }}</label>
     <span v-if="icon" class="input-group-text"
