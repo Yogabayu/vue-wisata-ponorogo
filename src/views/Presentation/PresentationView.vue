@@ -31,6 +31,7 @@ import logoSketch from "@/assets/img/logos/sketch.jpg";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
+
 onMounted(() => {
   body.classList.add("presentation-page");
   body.classList.add("bg-gray-200");
@@ -40,8 +41,9 @@ onUnmounted(() => {
   body.classList.remove("bg-gray-200");
 });
 </script>
-
 <template>
+  <!-- <Suspense>
+    <template #default> -->
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
@@ -100,7 +102,10 @@ onUnmounted(() => {
           <FilledInfoCard
             class="px-lg-1 mt-lg-0 mt-4 p-4"
             height="h-100"
-            :icon="{ component: 'precision_manufacturing', color: 'success' }"
+            :icon="{
+              component: 'precision_manufacturing',
+              color: 'success',
+            }"
             title="Plugins"
             description="Get inspiration and have an overview about the plugins that we
                 used to create the Material Kit."
@@ -293,4 +298,9 @@ onUnmounted(() => {
     </div>
   </div>
   <DefaultFooter />
+  <!-- </template>
+    <template #fallback>
+      <div>Loading . .. . .</div>
+    </template>
+  </Suspense> -->
 </template>

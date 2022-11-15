@@ -17,5 +17,12 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <router-view />
+  <Suspense>
+    <template #default>
+      <router-view />
+    </template>
+    <template #fallback>
+      <span>Loading...</span>
+    </template>
+  </Suspense>
 </template>

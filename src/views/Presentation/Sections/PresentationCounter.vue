@@ -1,5 +1,15 @@
 <script setup>
 import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCounterCard.vue";
+
+import { onMounted } from "vue";
+import { useFetchStore } from "../../../api/api";
+import { storeToRefs } from "pinia";
+const store = useFetchStore();
+const total = storeToRefs(store);
+const { fetchUsers } = store;
+onMounted(() => {
+  fetchUsers();
+});
 </script>
 
 <template>
@@ -14,7 +24,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
                 title="Coded Elements"
                 description="From buttons, to inputs, navbars, alerts or cards, you are
                   covered"
-                :count="70"
+                :count="total.total.value"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
