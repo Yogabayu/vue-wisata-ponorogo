@@ -134,7 +134,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Material Design
+        WiRo - Wisata Ponorogo
       </RouterLink>
       <a
         href="https://www.creative-tim.com/product/vue-material-kit-pro"
@@ -173,9 +173,9 @@ watch(
               <i
                 class="material-icons opacity-6 me-2 text-md"
                 :class="getTextColor()"
-                >dashboard</i
+                >tour</i
               >
-              Tour
+              Wisata
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -198,7 +198,7 @@ watch(
                       <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1"
                       >
-                        Landing Pages
+                        Tempat
                       </div>
                       <RouterLink
                         :to="{ name: 'about' }"
@@ -218,17 +218,17 @@ watch(
                       >
                         <span>Author</span>
                       </RouterLink>
-                      <div
+                      <!-- <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
                       >
                         Account
-                      </div>
-                      <RouterLink
+                      </div> -->
+                      <!-- <RouterLink
                         :to="{ name: 'signin-basic' }"
                         class="dropdown-item border-radius-md"
                       >
                         <span>Sign In</span>
-                      </RouterLink>
+                      </RouterLink> -->
                     </div>
                   </div>
                 </div>
@@ -237,19 +237,19 @@ watch(
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
                 >
-                  Landing Pages
+                  Forum
                 </div>
                 <RouterLink
                   :to="{ name: 'about' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>About Us</span>
+                  <span>Trending</span>
                 </RouterLink>
                 <RouterLink
                   :to="{ name: 'contactus' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>Contact Us</span>
+                  <span>Chat admin</span>
                 </RouterLink>
                 <RouterLink
                   :to="{ name: 'author' }"
@@ -271,7 +271,7 @@ watch(
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
               class="nav-link ps-2 d-flex cursor-pointer align-items-center"
@@ -285,7 +285,7 @@ watch(
                 :class="getTextColor()"
                 >view_day</i
               >
-              Sections
+              Forum
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -753,7 +753,7 @@ watch(
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
@@ -766,9 +766,9 @@ watch(
               <i
                 class="material-icons opacity-6 me-2 text-md"
                 :class="getTextColor()"
-                >article</i
+                >forum</i
               >
-              Docs
+              Forum
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -794,11 +794,10 @@ watch(
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                       >
-                        Getting Started
+                        Trending
                       </h6>
                       <span class="text-sm"
-                        >All about overview, quick start, license and
-                        contents</span
+                        >Lihat Tempat Wisata yang lagi hype di Ponorogo</span
                       >
                     </a>
                   </li>
@@ -810,14 +809,14 @@ watch(
                       <h6
                         class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                       >
-                        Foundation
+                        Chat Admin
                       </h6>
                       <span class="text-sm"
-                        >See our colors, icons and typography</span
+                        >Ada yang kurang ? silahkan chat admin</span
                       >
                     </a>
                   </li>
-                  <li class="nav-item list-group-item border-0 p-0">
+                  <!-- <li class="nav-item list-group-item border-0 p-0">
                     <a
                       class="dropdown-item py-2 ps-3 border-radius-md"
                       href=" https://www.creative-tim.com/learning-lab/vue/alerts/material-kit/"
@@ -832,7 +831,7 @@ watch(
                         components</span
                       >
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="row d-lg-none">
