@@ -17,7 +17,7 @@ const props = defineProps({
     default: () => ({
       route: "https://www.creative-tim.com/product/vue-material-kit",
       color: "bg-gradient-success",
-      label: "Free Download",
+      label: "Login",
     }),
   },
   transparent: {
@@ -175,7 +175,7 @@ watch(
                 :class="getTextColor()"
                 >dashboard</i
               >
-              Pages
+              Tour
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -908,7 +908,7 @@ watch(
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
+          <!-- <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               href="https://www.github.com/creativetimofficial/vue-material-kit"
               class="nav-link d-flex cursor-pointer align-items-center"
@@ -928,7 +928,7 @@ watch(
               </svg>
               Github
             </a>
-          </li>
+          </li> -->
         </ul>
         <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
