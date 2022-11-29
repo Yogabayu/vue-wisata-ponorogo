@@ -36,6 +36,18 @@ Open Git bash:
 ```
 
 Project will open on Visual studio Code Text Editor
+1. install module
+```bash
+   npm i
+```
+2. run project
+```bash
+   npm run serve
+```
+3. open on browser
+```bash
+   http://localhost:3000/
+```
     
 ## Authors
 
