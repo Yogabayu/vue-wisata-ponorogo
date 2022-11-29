@@ -20,6 +20,7 @@ Sebuah website yang digunakan untuk masyarakat ponorogo dan umum untuk menjelaja
 ## Installation
 
 Install WiRo with npm
+
 Open Git bash:
 
 ```bash
